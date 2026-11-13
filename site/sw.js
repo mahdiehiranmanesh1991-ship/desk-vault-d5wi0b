@@ -1,5 +1,5 @@
 // سرویس‌ورکر پوسته: فقط کش‌های با پیشوند desk- را مدیریت می‌کند
-const CACHE = 'desk-v1';
+const CACHE = 'desk-v2';
 const SHELL = [
   './',
   './index.html',
@@ -9,7 +9,9 @@ const SHELL = [
   './icons/apple-touch-icon.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './icons/maskable-512.png'
+  './icons/maskable-512.png',
+  './favicon.ico',
+  './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', e => {

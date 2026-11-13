@@ -16,7 +16,9 @@
 <title>میز کار پرونده‌ها</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
 @font-face{
   font-family:Vazirmatn;
@@ -68,12 +70,12 @@ body{
 }
 .mark{
   width:88px;height:88px;
-  border-radius:24px;
-  background:linear-gradient(160deg,#1e4254,#163242);
-  box-shadow:0 10px 28px rgba(0,0,0,.25), inset 0 0 0 1.5px rgba(196,165,116,.55);
-  display:grid;place-items:center;
+  border-radius:22px;
+  box-shadow:0 10px 28px rgba(0,0,0,.28);
+  display:block;
+  background:#163242;
 }
-.mark svg{width:54px;height:54px}
+.ltr{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
 .brand{text-align:center;color:#f7f3eb;margin-top:-4px}
 .brand h1{
   margin:0 0 6px;
@@ -190,19 +192,7 @@ noscript p{
 <body>
   <noscript><p>برای گشودن این صفحه باید جاوااسکریپت فعال باشد.</p></noscript>
   <div class="wrap">
-    <div class="mark" aria-hidden="true">
-      <svg viewBox="0 0 64 64" fill="none">
-        <path d="M32 8v34" stroke="#d4b56a" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M18 50h28" stroke="#d4b56a" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M32 8l-16 16" stroke="#d4b56a" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M32 8l16 16" stroke="#d4b56a" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M16 26c0 6 3.6 10 8 10s8-4 8-10" stroke="#d4b56a" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M32 26c0 6 3.6 10 8 10s8-4 8-10" stroke="#d4b56a" stroke-width="2.4" stroke-linecap="round"/>
-        <circle cx="16" cy="26" r="2.2" fill="#d4b56a"/>
-        <circle cx="48" cy="26" r="2.2" fill="#d4b56a"/>
-        <path d="M28 50v-8h8v8" stroke="#d4b56a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
+    <img class="mark" src="icons/icon-192.png" width="88" height="88" alt="">
     <div class="brand">
       <h1>میز کار پرونده‌ها</h1>
       <p>فضای کاری شخصی و قفل‌شده</p>
@@ -217,7 +207,7 @@ noscript p{
       <button class="btn" id="go" type="submit">گشودن</button>
       <div class="msg" id="msg" role="status" aria-live="polite"></div>
     </form>
-    <p class="foot">برای نصب روی آیفون، در Safari از منوی Share گزینهٔ <strong>Add to Home Screen</strong> را انتخاب کنید.</p>
+    <p class="foot">برای نصب روی آیفون، در Safari از منوی Share گزینهٔ <span class="ltr">Add to Home Screen</span> را انتخاب کنید.</p>
   </div>
 <script>
 (function(){
